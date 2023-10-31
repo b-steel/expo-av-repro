@@ -1,3 +1,5 @@
+Tracking [this issue](https://github.com/expo/expo/issues/19022)
+
 # expo-av-repro
 
 The `onPlaybackStatusUpdate` function should be called every 500ms (default value). When the app is run on an iOS simulator of phone (have not tried on android), with `yarn start`, the count is incremented every time the callback is fired. However, if remote debugging is turned on then the callback is not called.
